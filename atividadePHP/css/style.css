@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&display=swap");
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: #1e1f28;
+}
+*:focus {
+  outline: none;
+}
+.container {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1100px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+h1 {
+  text-align: center;
+  color: white;
+  font-family: "Roboto";
+  font-weight: 700;
+}
+.desks {
+  display: flex;
+  width: 900px;
+  max-width: 900px;
+  height: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.btn {
+  width: 250px;
+  height: 250px;
+  border: none;
+  position: relative;
+  margin: 1%;
+}
+.mesaicon {
+  max-width: 10vh;
+}
+button {
+  font-family: "Roboto";
+  font-weight: 400;
+}
+/* Ripple effect */
+.ripple {
+  background-position: center;
+  transition: background 0.8s;
+}
+.ripple:hover {
+  background: #383a46 radial-gradient(circle, transparent 1%, #383a46 1%)
+    center/15000%;
+}
+.ripple:active {
+  background-color: #ef3651;
+  background-size: 100%;
+  transition: background 0s;
+}
+.rippleSubmit {
+  background-position: center;
+  transition: background 0.8s;
+}
+.rippleSubmit:hover {
+  background: #ef3651 radial-gradient(circle, transparent 1%, #ef3651 1%)
+    center/15000%;
+}
+.rippleSubmit:active {
+  background-color: #ff8395;
+  background-size: 100%;
+  transition: background 0s;
+}

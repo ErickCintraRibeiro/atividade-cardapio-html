@@ -1,0 +1,116 @@
+.container {
+  justify-content: flex-start;
+  max-width: 1100px;
+}
+.menu {
+  display: flex;
+  height: 100vh;
+  background: #383a46;
+  width: 40%;
+  justify-content: center;
+}
+.produtos {
+  width: 60%;
+  background: #2a2c36;
+  height: 100vh;
+  font-size: 1vh;
+}
+.produtosContainer {
+  margin: 1%;
+}
+.comidas,
+.bebidas {
+  margin: ;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.comidas > div {
+  flex: 1 1 125px;
+}
+.bebidas > div {
+  flex: 1 1 180px;
+}
+.btnComida {
+  margin: 4px auto;
+  text-align: start;
+  width: 100%;
+  height: 7vh;
+  border: none;
+  font-size: 1.2vh;
+  justify-content: space-between;
+  position: relative;
+  background: #383a46;
+  color: rgb(175, 175, 175);
+  align-items: center;
+  border-right: 1px solid #2a2c36;
+  border-radius: 5px;
+}
+.drinkLogo {
+  max-width: 4vh;
+}
+.btnEnviar {
+  display: block;
+  width: 40%;
+  height: 50px;
+  border: none;
+  margin: 5% auto;
+  background: #ef3651;
+  font-family: "Roboto";
+  font-weight: bold;
+  color: white;
+  box-shadow: 0px 4px 8px rgba(239, 54, 81, 0.35);
+  border-radius: 25px;
+  align-content: flex-end;
+}
+@media (max-width: 1000px) {
+  .bebidas > div {
+    flex: 1 1 150px;
+  }
+}
+@media (max-width: 600px) {
+  .bebidas > div {
+    flex: 1 1 100px;
+  }
+  .btnComida {
+    height: 40px;
+  }
+  .btnEnviar {
+    width: 100%;
+  }
+}
+@media (max-height: 600px) {
+  .btnComida {
+    height: 33px;
+    font-size: calc(1px + 2vh);
+  }
+}
+.middle {
+  transition: 0.5s ease;
+  opacity: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btnComida:hover .image {
+  opacity: 1;
+  transition: 0.5s ease;
+}
+.btnComida:active .image {
+  opacity: 1;
+}
+.btnComida:hover .middle {
+  opacity: 1;
+}
+.image {
+  max-width: 3vh;
+  border-radius: 50%;
+  box-shadow: 0px 4px 8px rgba(239, 54, 81, 0.35);
+  opacity: 0;
+}
+span {
+  font-family: "Roboto";
+  font-weight: 900;
+  font-size: 2vh;
+}
